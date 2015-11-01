@@ -73,8 +73,6 @@ TVector<ValType>::TVector(int s, int si)
 		Size=s;
 		pVector=new ValType[Size];
 		StartIndex=si;
-		for (int i=StartIndex;i<StartIndex+Size;i++)
-			pVector[i]=0;
 	}	
 } /*-------------------------------------------------------------------------*/
 
@@ -82,7 +80,7 @@ template <class ValType> //конструктор копирования
 TVector<ValType>::TVector(const TVector<ValType> &v)
 {
 	Size=v.Size;
-	StartIndex=v.StartIndex
+	StartIndex=v.StartIndex;
 	pVector=new ValType[Size];
 	for (int i=StartIndex; i<Size+StartIndex; i++)
 		pVector[i]=v.pVector[i];
