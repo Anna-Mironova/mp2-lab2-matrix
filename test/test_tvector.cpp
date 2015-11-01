@@ -56,9 +56,9 @@ TEST(TVector, can_get_size)
 
 TEST(TVector, can_get_start_index)
 {
-  TVector<int> v(4, 2);
+	TVector<int> v(4, 2);
 
- EXPECT_EQ(2, v.GetStartIndex());
+	EXPECT_EQ(2, v.GetStartIndex());
 }
 
 TEST(TVector, can_set_and_get_element)
